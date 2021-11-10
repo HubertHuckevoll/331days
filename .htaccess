@@ -1,0 +1,16 @@
+# .htaccess
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteRule (331days-pages)\/(.*),0$        index.php?hook=article&op=show&articleBox=$1&article=$2&articlePage=0
+RewriteRule (331days-.*-Reisen)\/(.*),(.*)$ index.php?hook=trip&op=show&articleBox=$1&article=$2&articlePage=$3
+RewriteRule (331days-.*-Reisen)\/([0-9]+)$  index.php?hook=listArticles&op=show&articleBox=$1&boxPage=$2
+RewriteRule (331days-.*-Reisen)\/$          index.php?hook=listArticles&op=show&articleBox=$1
+
+RewriteRule sitemap.xml                     index.php?hook=sitemap
+
+RewriteRule                                 boxes.json - [F]
+
+ErrorDocument 404                           /error404.php
+
+DirectoryIndex                              index.php

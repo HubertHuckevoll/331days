@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /temp/
+Disallow: /cardboard/
+Disallow: /cardboard.datastore/
+Disallow: /cardboard.kupc/
+Sitemap: http://www.331days.de/sitemap.xml

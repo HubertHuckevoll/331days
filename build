@@ -1,0 +1,45 @@
+#!/usr/bin/php
+
+<?php
+
+  /**
+   * CLI build script
+   * used fpr building all articles on the command line
+   * in case of emergency or when setting up the system...
+   * we need to patch in some variables that are not available
+   * in the cli environment but that are neccessary for building
+   *
+   * $_SERVER['DOCUMENT_ROOT'] => CLI_DOCUMENT_ROOT:
+   * used by getPathFS - only at build time
+   *
+   * $_SERVER['HTTP_HOST'] => CLI_HOST: used by getPathURL - also
+   * at runtime, so it must contain the host auf the production
+   * environment
+   * _______________________________________________________________
+   */
+
+  error_reporting(E_ALL ^ E_NOTICE);
+  require_once('/var/services/web/cardboard/cbLoader.php');
+  require_once('/var/services/web/cardboard.kupc/autoload.php');
+  require_once('/var/services/web/cardboard.kupc/builder.php');
+  
+  define('CLI_DOCUMENT_ROOT', '/var/services/web/');
+  define('CLI_HOST', 'https://hasenbuelt.synology.me/');
+  
+  try
+  {
+    
+    $what       = (isset($argv[1])) ? $argv[1] : 'all';
+    $filterOp   = (isset($argv[2])) ? $argv[2] : null;
+    $filterData = (isset($argv[3])) ? $argv[3] : null;
+    
+    $k = new builder();
+    $k->run($what, $filterOp, $filterData);
+    
+  }
+  catch(Exception $e)
+  {
+    die($e->getMessage());
+  }
+
+?>

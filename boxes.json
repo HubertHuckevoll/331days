@@ -1,0 +1,46 @@
+{
+  "pages": {
+      "box":      "331days-pages",
+      "pwd":      "$2y$10$dliUpHAXDRGtCD3Gdk9LEOC9j7uqYvYEhH7NdJc7QaruWn1.zd7Ge",
+      "type":     "classic",
+      "internal": false,
+      "alias":    "Pages",
+      "email":    "b.schulte68@googlemail.com"
+  },
+  "amerika": {
+      "box":      "331days-Amerika-Reisen",
+      "pwd":      "$2y$10$dliUpHAXDRGtCD3Gdk9LEOC9j7uqYvYEhH7NdJc7QaruWn1.zd7Ge",
+      "gurl":     "https://docs.google.com/spreadsheets/d/e/2PACX-1vQKNhpfsNUTItjwEOEuGEm57EI9TexDJOMtSec_ancYnsLD07cv_4xgbM3PWEZBb0auvL7I0bZeLcj7/pubhtml",
+      "type":     "gdocs",
+      "internal": false,
+      "alias":    "Amerika",
+      "email":    "b.schulte68@googlemail.com"
+  },
+  "asien": {
+      "box":      "331days-Asien-Reisen",
+      "pwd":      "$2y$10$dliUpHAXDRGtCD3Gdk9LEOC9j7uqYvYEhH7NdJc7QaruWn1.zd7Ge",
+      "gurl":     "https://docs.google.com/spreadsheets/d/e/2PACX-1vR0qIk-Bwz4MYEOX40Vjg4Gv3fZO1gsYJPdlizNK96odezFmxTmMN5gXo1vt_mzKDkF7OohcF25xo9w/pubhtml",
+      "type":     "gdocs",
+      "internal": false,
+      "alias":    "Asien",
+      "email":    "b.schulte68@googlemail.com"
+  },
+  "europa": {
+      "box":      "331days-Europa-Reisen",
+      "pwd":      "$2y$10$dliUpHAXDRGtCD3Gdk9LEOC9j7uqYvYEhH7NdJc7QaruWn1.zd7Ge",
+      "gurl":     "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6UBxT2QwpktwdKGKG5oZVqMdtQ_yOadlMArJYJKN4eHIZpM4LvOQDOSE4ECUVhCCVtNTMM06hkvC5/pubhtml",
+      "type":     "gdocs",
+      "internal": false,
+      "alias":    "Europa",
+      "email":    "b.schulte68@googlemail.com"
+  },
+  "afrika": {
+      "box":      "331days-Afrika-Reisen",
+      "pwd":      "$2y$10$dliUpHAXDRGtCD3Gdk9LEOC9j7uqYvYEhH7NdJc7QaruWn1.zd7Ge",
+      "gurl":     "https://docs.google.com/spreadsheets/d/e/2PACX-1vQH6oMMR4yt2DdOm65A8pyS1eIde1c_NRTAZFJMKoBO6XthMyGIv_lAL63Ry6sNtrS-CVCVAbuHW9Ck/pubhtml",
+      "type":     "gdocs",
+      "internal": false,
+      "alias":    "Afrika",
+      "email":    "b.schulte68@googlemail.com"
+  }
+}

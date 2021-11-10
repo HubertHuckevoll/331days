@@ -1,0 +1,365 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+html {
+  background-color: #f7f0e6;
+  background: url(../img/mirrored_squares.png) repeat left top;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#wrapper
+{
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px 5px #888;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: url(../img/header.jpg) no-repeat top left rgba(255, 255, 255, 128);
+}
+
+#title {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+  padding-left: 30px;
+  padding-bottom: 100px;
+  margin: 0;
+  color: white;
+  opacity: .9;
+  font-size: 5.5em;  /* 66pt */
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-variant: small-caps;
+  text-shadow: 10px 10px 20px #333;
+}
+
+#title a, #title a:hover, #title a:active {
+	color: white;
+	text-decoration: none;
+}
+
+#subtitle {
+	text-align: right;
+  margin-right: 20px;
+  font-family: serif;
+  font-size: 2rem; /* 8pt; */
+  font-style: italic;
+  text-transform: none;
+  color: white;
+  text-shadow: 1px 1px 2px #900;
+}
+
+#mobileNavbar {
+  display: none;
+}
+
+#mobileNavbarTrigger {
+  display: none;
+}
+
+#navbar {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  padding-left: 2px;
+  padding-right: 3px;
+  background-color: #900;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#navbar ul li {
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  margin-left: 15px;
+}
+
+#navbar ul li.selected
+{
+  line-height: 40px;
+  height: 40px;
+  background-color: #F0F0EC;
+  z-index: 1;
+}
+
+#navbar ul li a
+{
+  color: white;
+  text-transform: uppercase;
+	font-size: 1rem;
+  letter-spacing: 0px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#navbar ul li.selected a
+{
+  color: #900;
+  font-weight: bold;
+}
+
+#searchBox {
+  margin-right: 10px;
+  padding-top: 30px;
+}
+
+#searchBox input
+{
+  height: 32px;
+  line-height: 32px;
+  border-radius: 10px 0 0 10px;
+  font-weight: normal;
+  font-size: 1.1rem;
+  outline: 0;
+  padding: 2px 7px 2px 7px;
+}
+
+#searchBox button
+{
+  height: 32px;
+  border-radius: 0 10px 10px 0;
+  outline: 0;
+}
+
+#searchResultsList a {
+  color: #A00;
+  font-weight: bold;
+}
+
+main
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-bottom: 5px;
+  /*min-height: 100%;
+  height: auto !important;
+  box-shadow: 0 0 5px 5px #888;*/
+  background-color: #F0F0EC;
+}
+
+#content {
+  font-size: 1.0rem;
+  padding: 0;
+  margin-left: 10px;
+  padding-top: 10px;
+  width: 625px;
+}
+
+.cbArticleClassicS0, .block {
+  background-color: #fff;
+  border: 1px solid #D2D2C6;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  padding: 10px;
+  padding-bottom: 20px;
+  word-wrap: break-word;
+  orphans: 3;
+}
+
+#content a {
+ color: #A00;
+ font-weight: bold;
+}
+
+#content .abcParagraph img {
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+
+#content img {
+  max-width: 600px;
+}
+
+#content .cbArticlePageControl {
+  float: right;
+  padding-bottom: 50px;
+}
+
+.abcArticleIndexLink {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+
+#content .h1 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #DDD;
+  text-align: right;
+}
+
+#content h2 {
+	background-color: #900;
+	color: white;
+	padding: 5px;
+	font-variant: small-caps;
+	padding-left: 10px;
+	font-size: 1rem;
+	border-radius: 5px 5px 0 0;
+}
+
+.moreBoxContentLink {
+	display: block;
+	text-align: right;
+}
+
+.moreBoxContentLink span {
+	font-variant: small-caps;
+	font-size: 1.2rem;
+}
+
+#content .tripList {
+  margin: 0;
+  padding: 0;
+}
+
+#content .tripList li {
+  list-style-position: inside;
+  background-color: #fff;
+  border: 1px solid #D2D2C6;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 15px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+[class="331days-Asien-Reisen"] {
+  background: url(../img/asia.png) no-repeat right bottom white;
+  list-style-image: url(../img/fatcow_asia.png);
+}
+
+[class="331days-Amerika-Reisen"] {
+  background: url(../img/usa.png) no-repeat right bottom white;
+  list-style-image: url(../img/aha_unclesam.png);
+}
+
+[class="331days-Europa-Reisen"] {
+  background: url(../img/europa.png) no-repeat right bottom white;
+  list-style-image: url(../img/dooffy_europe.png);
+}
+
+[class="331days-Afrika-Reisen"] {
+  background: url(../img/africa.png) no-repeat right bottom white;
+  list-style-image: url(../img/baobab.png);
+}
+
+#sidebar {
+  color: #55554A;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  margin-right: 10px;
+  width: 300px;
+}
+
+#sidebar h2 {
+  background-color: white;
+  border: 1px solid #D2D2C6;
+  border-radius: 5px 5px 5px 5px;
+  color: #900;
+	margin-bottom: 8px;
+	margin-top: 0px;
+	padding-bottom: 4px;
+	padding-right: 6px;
+	padding-top: 2px;
+	font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+#sidebar a, #sidebar a:visited, #sidebar a:active,
+footer a, footer a:visited, footer a:active {
+  font-size: .8rem;
+  color: #55554A;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+#sidebar ul {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  text-align: center;
+}
+
+#sidebar li {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#sidebar li.selected {
+  border: 1px solid #D2D2C6;
+  border-radius: 5px;
+  background-color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+#sidebar #sidebarImg {
+  text-align: center;
+}
+
+#sidebar #sidebarImg a img
+{
+  width: 300px;
+}
+
+.abcArticleDate {
+  display: none;
+}
+
+footer
+{
+  box-sizing: border-box;
+  text-align: center;
+  text-shadow: 1px 1px 0px #fff;
+  padding: 5px 0px 5px 0px;
+  border-top: 1px solid #D2D2C6;
+  background-color: white;
+}
+
+#impressum
+{
+  vertical-align: 3px;
+}
